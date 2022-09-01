@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./cssfiles/main.css" type="text/css"/>
+	<link rel="stylesheet" href="./cssfiles/contact.css" type="text/css"/>
+	<script defer type="text/javascript" src="./javascriptfiles/newsletter.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<img src="images/icons8-horizontal-separated-bars-representing-hamburger-menu-layout-tal-revivo-bold-32.png">
+			</label>
+			<label class="logo">RENT WHEELZ</label>
+			<ul>
+				<li><a  href="homepage.html">HOME</a></li>
+				<li><a href="ourcompany.html">OUR COMPANY</a></li>
+				<li><a href="fleet.html">FLEET</a></li>
+				<li><a href="pricing.html">PRICING</a></li>
+				<li><a class="active" href="contact.html">CONTACT US</a></li>
+				<li><a href="admin.html">ADMIN</a></li>
+			</ul>
+		</nav>
+		<!--MAIN-->
+		<h1 class="heading"> Send Us Messages</h1>
+		<div class="form-container">
+		  <form id="messageform" action="phpfiles/messages.php"  method="post">
+		  	<table>
+		  	<tr>
+			  	<td class="lbl">Name:</td>
+			  	<td><input class="textfield" type="text" name="name" id="msg_name" size="40" placeholder="Your full name"></td>
+		  	</tr>
+					<td class="lbl">Phone:</td>
+			  	<td><input class="textfield" type="text" name="phone" id="msg_phone" size="40"
+						placeholder="Enter any phone number you have">
+					</td>
+		  	</tr>
+		  	<tr>
+			  	<td class="lbl">E-Mail:</td>
+			  	<td><input class="textfield" type="text" name="email"
+						id="msg_email" size="40" placeholder="example@mail.com">
+					</td>
+		  	</tr>
+		  	<tr>
+			  	<td class="lbl">Subject:</td>
+			  	<td><input class="textfield" type="text" name="subject" id="subject" size="30"
+						placeholder="What the message is about...">
+					</td>
+		  	</tr>
+		  	<tr>
+			  	<td class="lbl">Message:</td>
+			  	<td>
+						<textarea name="message" id="message" cols="40" rows="5"
+						placeholder="Type anything you want to say or ask any questions here..."></textarea>
+					</td>
+		  	</tr>
+		  	</table>
+				<button name="send" type="submit" value="send" class="sendbtn">Send Message</button>
+			</form>
+		</div>
+		<div class="info-container">
+			<div class="contactcolumn">
+				<h2 class="infohead">Contact Information</h2>
+				<p>Phone number: <a class="info" href="+32-456555670">+32-456-555-670</a></p>
+				<p>E-mail: <a class="info" href="rent.wheelz@gmail.com">rent.wheelz@gmail.com</a></p>
+				<p>Adress: Chau. de Louvain 1150 Bruxelles</p>
+			</div>
+			<div class="mapcolumn">
+				<h2 class="infohead">Find Us Here</h2>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.4553111461037!2d4.425390842718465!3d50.86210496229083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dcbbe6c6b64d%3A0xff4b7abf882aa120!2sChau.%20de%20Louvain%201150%2C%201200%20Bruxelles%2C%20Belgium!5e0!3m2!1sen!2sgr!4v1653162878415!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+			</div>
+		</div>
+		<!--Footer-->
+		<footer class="footer">
+			<div class="footer_container">
+				<div class="footergrid">
+					<div class="newscolumn">
+						<h3>Subscribe to newsletter</h3>
+						<form id="letterform" action="phpfiles/clients.php"  method="post">
+							<table>
+							<tr>
+							<td><input class="textfield" id="form_username" type="text" name="form_username" size="35" placeholder="Username"></td>
+							</tr>
+							<tr>
+							<td><input class="textfield" type="text" id="form_name" name="form_name" size="35" placeholder="Name"></td>
+							</tr>
+							<tr>
+							<td><input class="textfield" type="text" id="form_email" name="form_email" size="35" placeholder="E-mail"></td>
+							</tr>
+							</table>
+							<button type="submit" value="submit" class="subbtn">Subscribe</button>
+						</form>
+					</div>
+					<div class="infocolumn">
+						<h3 id="info_title">Contact Information</h3>
+						<p>Phone number: <a class="info" href="+32-456555670">+32-456-555-670</a></p>
+						<p>E-mail: <a class="info" href="rent.wheelz@gmail.com">rent.wheelz@gmail.com</a></p>
+					</div>
+					<div class="mapcolumn">
+						<h3 id="map_title">Our Location</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.4553111461037!2d4.425390842718465!3d50.86210496229083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dcbbe6c6b64d%3A0xff4b7abf882aa120!2sChau.%20de%20Louvain%201150%2C%201200%20Bruxelles%2C%20Belgium!5e0!3m2!1sen!2sgr!4v1653162878415!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div> <!--End of container-->
+</body>
+</html>
+
+</body>
+</html>

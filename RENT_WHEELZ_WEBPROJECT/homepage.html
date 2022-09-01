@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./cssfiles/main.css" type="text/css"/>
+	<link rel="stylesheet" href="./cssfiles/homepage.css" type="text/css"/>
+	<script defer type="text/javascript" src="./javascriptfiles/newsletter.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<img src="images/icons8-horizontal-separated-bars-representing-hamburger-menu-layout-tal-revivo-bold-32.png">
+			</label>
+			<label class="logo">RENT WHEELZ</label>
+			<ul>
+				<li><a class="active" href="homepage.html">HOME</a></li>
+				<li><a href="ourcompany.html">OUR COMPANY</a></li>
+				<li><a href="fleet.html">FLEET</a></li>
+				<li><a href="pricing.html">PRICING</a></li>
+				<li><a href="contact.html">CONTACT US</a></li>
+				<li><a href="admin.html">ADMIN</a></li>
+			</ul>
+		</nav>
+		<!--MAIN-->
+		<!--creating grid1 columns-->
+		<div class="grid" id="grid1">
+			<div class="content" id="wwa">
+				<h3>WHO WE ARE</h3>
+				<p>We are a car rental company established in 2006 and based in Brussels, Belgium. As of 2015 we have partnered with Mercedes-Benz and have more than 13 autoshops around Europe, where you can rent our vehicles. Our hard working team made everything possible and promises you to deliver the greatest rental experience.</p>
+				<p id='target'>Our target is to exceed expectations and make sure our clients are more than happy with their driving experience.</p>
+			</div>
+			<div class="content" id="vidcontainer">
+				<iframe id='video' src="./images/sclass.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="services">
+			<h3 id="serHead">OUR SERVICES</h3>
+			<!--creating grid2 columns-->
+			<div class="grid" id="grid2">
+				<div class="service">
+					<div class="servminivan">
+						<img class="services_img" src="./images/blackminivan.jpg" alt="Minivan Services">
+						<div class="overlay overlay--blur">
+							<div class="serv_title">Mini Van Rental</div>
+							<p class="serv_description">A variety of luxury vans</p>
+						</div>
+					</div>
+				</div>
+				<div class="service">
+					<div class="servcar">
+						<img class="services_img" src="./images/car.jpg" alt="Car Services">
+						<div class="overlay overlay--blur">
+							<div class="serv_title">Car Rental</div>
+							<p class="serv_description">Economy and Luxury cars</p>
+						</div>
+					</div>
+				</div>
+				<div class="service">
+					<div class="servbike">
+						<img class="services_img" src="./images/bike.jpg" alt="Bike Services">
+						<div class="overlay overlay--blur">
+							<div class="serv_title">Bike Rental</div>
+							<p class="serv_description">Scooters to Sport bikes</p>
+						</div>
+					</div>
+				</div>
+				<div class="service">
+					<div class="servvip">
+						<img class="services_img" src="./images/vip.jpg" alt="VIP Services">
+						<div class="overlay overlay--blur">
+							<div class="serv_title">VIP Transport</div>
+							<p class="serv_description">Ride in a luxury van or car</p>
+						</div>
+					</div>
+				</div>
+			</div> <!--End of grid2-->
+			<div class="ctadiv">
+				<a class="ctabtn" href="ourcompany.html" target="_blank">Learn More</a>
+			</div>
+		</div> <!--End of services-->
+		<!--Footer-->
+		<footer class="footer">
+			<div class="footer_container">
+				<div class="footergrid">
+					<div class="newscolumn">
+						<h3>Subscribe to newsletter</h3>
+						<form id="letterform" action="phpfiles/clients.php"  method="post">
+					  	<table>
+					  	<tr>
+					  	<td><input class="textfield" id="form_username" type="text" name="form_username" size="35" placeholder="Username"></td>
+					  	</tr>
+							<tr>
+					  	<td><input class="textfield" type="text" id="form_name" name="form_name" size="35" placeholder="Name"></td>
+					  	</tr>
+					  	<tr>
+					  	<td><input class="textfield" type="text" id="form_email" name="form_email" size="35" placeholder="E-mail"></td>
+					  	</tr>
+							</table>
+							<button type="submit" value="submit" class="subbtn">Subscribe</button>
+						</form>
+
+					</div>
+					<div class="infocolumn">
+						<h3 id="info_title">Contact Information</h3>
+						<p>Phone number: <a class="info" href="+32-456555670">+32-456-555-670</a></p>
+						<p>E-mail: <a class="info" href="rent.wheelz@gmail.com">rent.wheelz@gmail.com</a></p>
+					</div>
+					<div class="mapcolumn">
+						<h3 id="map_title">Our Location<h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.4553111461037!2d4.425390842718465!3d50.86210496229083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dcbbe6c6b64d%3A0xff4b7abf882aa120!2sChau.%20de%20Louvain%201150%2C%201200%20Bruxelles%2C%20Belgium!5e0!3m2!1sen!2sgr!4v1653162878415!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div> <!--End of container-->
+</body>
+</html>
